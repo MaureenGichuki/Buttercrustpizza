@@ -87,11 +87,13 @@ body{
 }
 .bter1{
     font-size: 30px;
-    color: white;
+    color: gold;
+    font-style: italic;
+    font-weight: bolder;
 }
 .bter2{
-    font-size: 20px;
-    padding-top: 200px;
+    font-size: 50px;
+    padding-bottom: 100px;
     text-align: center;
     color:white;
 }
@@ -100,11 +102,12 @@ body{
 }
 .btn{
     background: #ffa500;
-    padding: 10px;
+    padding: 20px;
+    margin-left: 300px;
     border-radius: 10px;
     color: white;
     font-size: 15px;
     font-weight: bolder;
     display: block;
-    float: right;
+    border-style: hidden;
 }
