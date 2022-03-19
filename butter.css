@@ -26,17 +26,52 @@ body{
     margin: 50px;
     padding: 70px;
 }
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.m1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.size{
+    width: 200px;
+    height: 40px;
+    font-size:15px;
+}
+.toppings{
+    width: 200px;
+    height: 40px;
+    font-size:15px;
+}
+.crust{
+    width: 200px;
+    height: 40px;
+    font-size:15px;
+}
+.size1{
+    background-color: white;
+    margin-right: 20px;
+    padding: 50px;
+}
+.top1{
+    background-color: white;
+    margin-right: 20px;
+    padding: 50px;
+}
+.crust1{
+    background-color: white;
+    margin-right: 20px;
+    padding: 50px;
+}
 #img1{
     height:200px;
-    margin-top: -100px;
 }
 #img2{
-    margin-left: -100px;
     height: 200px;
 }
 #img3{
-    margin-left: -100px;
-    margin-top: 100px;
     height: 200px;
 }
 .bter1{
