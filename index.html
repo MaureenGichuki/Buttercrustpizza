@@ -63,18 +63,21 @@
         </div>
     </div>
         <button class="sub" name="button" onclick="getOrder();">Order</button>
-        <table>Order Number</table>
+        <table class="table">
+            <p class="edittext">Order Number</p>
         <tr>
             <td id="sz">No 1</td>
             <td id="tp"></td>
             <td id="cr"></td>
         </tr>
+    </table>
         <p class="edittext1">Your order is: <span id="total1"></span></p>
         <p class="edittext2">Would you like your order delivered? <span id="q1"></span></p>
-        <button class="sub1" name="button"value=200 >Yes</button>
-        <button class="sub2" name="button">No</button>
+        <div class="buttons">
+            <button class="sub1" name="button" value=200 type="submit">Yes</button> 
+            <button class="sub2" name="button" type="submit">No</button>
+        </div>
         <button class="sub3" name="button" onclick="getGrandTotal();">Checkout</button>
-
-
+    
 </body>
 </html>
