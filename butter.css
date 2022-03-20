@@ -74,6 +74,10 @@ body{
 #img3{
     height: 200px;
 }
+.buttons{
+    display: flex;
+    justify-content: center;
+}
 .sub{
     padding: 20px;
     width: 200px;
@@ -84,6 +88,40 @@ body{
     border-style: hidden;
     margin-left: 500px;
     margin-top: 50px;
+}
+.sub1{
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    display: block;
+    border-style: hidden;
+    margin-right: 70px;
+    display: none;
+}
+.sub2{
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    display: block;
+    border-style: hidden;
+    margin-right: 70px;
+    display: none;
+}
+.sub3{
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    display: block;
+    border-style: hidden;
+    margin-left: 500px;
+    margin-top: 50px;
+    display: none;
 }
 .bter1{
     font-size: 30px;
@@ -110,4 +148,40 @@ body{
     font-weight: bolder;
     display: block;
     border-style: hidden;
+}
+.edittext1{
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    display: none;
+}
+.edittext2{
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    display: none;
+}
+.edittext{
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    display: none;
+}
+#sz{
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    display: none;
+}
+#tp{
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    display: none;
+}
+#cr{
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    display: none;
 }
