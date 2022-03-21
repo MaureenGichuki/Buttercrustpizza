@@ -69,40 +69,32 @@
         <table id="table">
             <thead>
         <tr>
-            <!-- <th>Order Number</th> -->
             <th>Size</th>
             <th>Toppings</th>
             <th>Crust</th>
-            <th>Totals</th>
         </tr>
     </thead>
         <tbody>
-        <!-- <tr>
-            <td id="ord"></td>
-            <td id="sz"></td>
-            <td id="tp"></td>
-            <td id="cr"></td>
-            <td id="tots"></td>
-        </tr> -->
     </tbody>
     </table>
     <div class="buttons1">
     <button class="sub4" name="button" onclick="getOrder1();">Add Another</button>
     <button class="sub5" name="button">Done</button>
 </div>
-        <!-- <p class="edittext1">Your order is: <span id="total1"></span></p> -->
-        <p class="edittext2">Would you like your order delivered? <span id="q1"></span></p>
+        <p class="edittext2">Would you like your order delivered?</p>
         <div class="buttons">
             <button class="sub1" name="button" value=200 type="submit">Yes</button> 
             <button class="sub2" name="button" type="submit">No</button>
         </div>
         <div class="form2">
             <p class ="loc">Please input your location</p>
-            <label for="email" class="lbl1"></label>
+            <label for="location" class="lbl1"></label>
             <input type="text" placeholder="Enter your location..." class="lbl2" id="em1">
         </div>
+        <button class="sub6" name="button" type="submit">Ok</button>
         <p class="edittext3">The delivery charge is Ksh 200</p>
         <button class="sub3" name="button" onclick="getGrandTotal();">Checkout</button>
+        <p class="edittext4">Your Grand Total is<span id="q1"></span></p>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="script.js"></script>
 </body>
