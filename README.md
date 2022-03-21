@@ -5,7 +5,7 @@
 ### By Maureen Gichuki
 ### This is an overview of the Pizza Place Independent Project for week 4.
  
- The project highlights on the use of applications of Html5, Css, Javascript and Jquery.
+ The project highlights on the applications of Html5, Css, Javascript and Jquery.
  A user can order pizza based on the size, toppings and crust and also ask for delivery services based on their location.
 
 ### Table of Contents
