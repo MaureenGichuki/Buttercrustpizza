@@ -249,10 +249,37 @@ tr{
     font-size: 20px;
 }
 td{
-    padding: 20px;
+    padding: 100px;
+    padding-bottom: 0px;
+    padding-top: 20px;
 }
 .loc{
     font-size: 25px;
     color: white;
     font-weight: bolder;
+}
+.contacts{
+    display: flex;
+    color: white;
+    font-size: 25px;
+    background-color: orange;
+    margin-top: 100px;
+    padding: 50px;
+}
+.contacts ul{
+    display: flex;
+}
+.contacts li{
+    list-style: none;
+    padding: 30px;
+}
+.lbl2{
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.edittext6{
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    display: none;
 }
