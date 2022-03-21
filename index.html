@@ -64,25 +64,33 @@
     </div>
     <div class="btttn">
         <button class="sub" name="button" onclick="getOrder();">Order</button>
-        <button class="sub4" name="button" onclick="getOrder1();">Add Another</button>
     </div>
+    <P class = "edittext1">Here's your order<span id="total1"></span></p>
         <table id="table">
-        <th>
-            <th>Order Number</th>
+            <thead>
+        <tr>
+            <!-- <th>Order Number</th> -->
             <th>Size</th>
             <th>Toppings</th>
             <th>Crust</th>
-            <th>Totsls</th>
-        </th>
-        <tr>
+            <!-- <th>Totals</th> -->
+        </tr>
+    </thead>
+        <tbody>
+        <!-- <tr>
             <td id="ord"></td>
             <td id="sz"></td>
             <td id="tp"></td>
             <td id="cr"></td>
             <td id="tots"></td>
-        </tr>
+        </tr> -->
+    </tbody>
     </table>
-        <p class="edittext1">Your order is: <span id="total1"></span></p>
+    <div class="buttons1">
+    <button class="sub4" name="button" onclick="getOrder1();">Add Another</button>
+    <button class="sub5" name="button">Done</button>
+</div>
+        <!-- <p class="edittext1">Your order is: <span id="total1"></span></p> -->
         <p class="edittext2">Would you like your order delivered? <span id="q1"></span></p>
         <div class="buttons">
             <button class="sub1" name="button" value=200 type="submit">Yes</button> 
