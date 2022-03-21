@@ -13,7 +13,7 @@ $(document).ready(function(){
         let size= (document.getElementById("size").value);
         let toppings= (document.getElementById("toppings").value);
         let crust= (document.getElementById("crust").value);
-        let total;
+        // let total;
         let tr = '<tr><td>' + size +'</td>   <td>' + toppings + '</td>   <td>' + crust + '</td></tr>';
         $('tbody').append(tr);
         total = (sizePrice + topPrice + crustPrice);
@@ -23,7 +23,7 @@ $(document).ready(function(){
         let size= (document.getElementById("size").value);
         let toppings= (document.getElementById("toppings").value);
         let crust= (document.getElementById("crust").value);
-        let total = parseInt(size + toppings + crust);
+        // let total = parseInt(size + toppings + crust);
         let tr = '<tr><td>' + size +'</td>   <td>' + toppings + '</td>   <td>' + crust + '</td></tr>';
             $('tbody').append(tr);
         });
@@ -75,62 +75,63 @@ function getOrder1(size,toppings,crust){
 
 }
 
-function getGrandTotal(sizePrice, topPrice, crustPrice){
 let totals;
 let delivery = 200;
-let size= (document.getElementById("size").value);
+function getGrandTotal(sizePrice, topPrice, crustPrice){
+let size = (document.getElementById("size").value);
 var sizePrice = 0 ;
-if (size==="large"){
+if (size==="large-1000"){
    sizePrice = 1000;
 }
-else if (size==="medium"){
+else if (size==="medium-700"){
     sizePrice = 700;
 }
-else if(size==="small"){
+else if(size==="small-550"){
     sizePrice = 550;
 }
 
 let toppings= (document.getElementById("toppings").value);
 var topPrice = 0 ;
-if (toppings==="pepperoni"){
+if (toppings==="pepperoni-400"){
     topPrice = 400;
 }
-else if (toppings==="sausage"){
+else if (toppings==="sausage-300"){
      topPrice = 300;
 }
-else if (toppings==="cheese"){
+else if (toppings==="cheese-400"){
      topPrice = 400;
 }
-else if (toppings==="bacon"){
+else if (toppings==="bacon-400"){
     topPrice = 400;
 }
-else if (toppings==="chicken"){
+else if (toppings==="chicken-300"){
     topPrice = 300;
 }
-else if(toppings==="mushroom"){
+else if(toppings==="mushroom-250"){
     topPrice = 250;
 }
 
 let crust= (document.getElementById("crust").value); 
 var crustPrice = 0 ;
-if (crust==="pan&handtossed"){
+if (crust==="pan&handtossed-200"){
     crustPrice = 200;
 }
-else if (crust==="thincrust"){
+else if (crust==="thincrust-100"){
     crustPrice = 100;
 }
-else if (crust==="buttercrust"){
+else if (crust==="buttercrust-300"){
     crustPrice = 300;
 }
-else if (crust==="brooklyn"){
+else if (crust==="brooklyn-400"){
      crustPrice = 400;
 }
-else if(crust==="gluten"){
+else if(crust==="gluten-500"){
     crustPrice = 500;
 }
 
 totals = (sizePrice + topPrice + crustPrice + delivery);
 document.getElementById("q1").innerHTML = totals;
+
 }
 
 console.log(getGrandTotal());
