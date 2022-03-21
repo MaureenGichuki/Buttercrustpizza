@@ -31,44 +31,55 @@
         </div> 
     </div>
     <p class="m1">Our Menu</p>
-    <div class="menu">
+    <div id="menu">
         <div class="size1">
             <img src="https://images.pexels.com/photos/1788852/pexels-photo-1788852.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="img1">
-            <select class="size">
-                <option label="Large" value=1000 id="Large">Large</option>
-                <option label="Medium" value=800 id="medium">Medium</option>
-                <option label="Small" value=600 id="small">Small</option>
+            <select id="size">
+                <option label="Large" name="siz" value="large">Large</option>
+                <option label="Medium" name="siz" value="medium">Medium</option>
+                <option label="Small" name="siz" value="small">Small</option>
             </select>
         </div>
         <div class="top1">
             <img src="https://images.pexels.com/photos/842519/pexels-photo-842519.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="img3">
-            <select  class="toppings">
-                <option label="Pepperoni" value=500 id="pepperoni">Pepperoni</option>
-                <option label="Sausage" value=300 id="sausage">Sausage</option>
-                <option label="Bacon" value=600 id="bacon">Bacon</option>
-                <option label="Cheese" value=700 id="cheese">Cheese</option>
-                <option label="Chicken" value=600 id="chicken">Chicken</option>
-                <option label="Mushroom" value=500 id="mushroom">Mushroom</option>
+            <select  id="toppings">
+                <option label="Pepperoni" name="top" value="pepperoni">Pepperoni</option>
+                <option label="Sausage" name="top" value="sausage">Sausage</option>
+                <option label="Bacon"  name="top" value="bacon">Bacon</option>
+                <option label="Cheese" name="top" value="cheese">Cheese</option>
+                <option label="Chicken"  name="top"value="chicken">Chicken</option>
+                <option label="Mushroom"  name="top"value="mushroom">Mushroom</option>
             </select>
         </div>
         <div class="crust1">
             <img src="https://images.pexels.com/photos/1166120/pexels-photo-1166120.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="img2">
-            <select class="crust">
-                <option label="Pan & Hand Tossed" value=500 id="pan&handtossed">Pan & Hand Tossed</option>
-                <option label="Thin Crust" value=300 id="thincrust">Thin Crust</option>
-                <option label="Butter Crust" value=600 id="buttercrust">Butter Crust</option>
-                <option label="Brooklyn Style" value=700 id="brooklyn">Brooklyn Style</option>
-                <option label="Gluten Free Crust" value=700 id="gluten">Gluten Free Crust</option>
+            <select id="crust">
+                <option label="Pan & Hand Tossed" name= "cru" value="pan&handtossed">Pan & Hand Tossed</option>
+                <option label="Thin Crust"  name= "cru" value="thincrust">Thin Crust</option>
+                <option label="Butter Crust"  name= "cru" value="buttercrust">Butter Crust</option>
+                <option label="Brooklyn Style"  name= "cru" value="brooklyn">Brooklyn Style</option>
+                <option label="Gluten Free Crust"  name= "cru" value="gluten">Gluten Free Crust</option>
             </select>
         </div>
     </div>
+    <div class="btttn">
         <button class="sub" name="button" onclick="getOrder();">Order</button>
-        <table class="table">
-            <p class="edittext">Order Number</p>
+        <button class="sub4" name="button" onclick="getOrder1();">Add Another</button>
+    </div>
+        <table id="table">
+        <th>
+            <th>Order Number</th>
+            <th>Size</th>
+            <th>Toppings</th>
+            <th>Crust</th>
+            <th>Totsls</th>
+        </th>
         <tr>
-            <td id="sz">No 1</td>
+            <td id="ord"></td>
+            <td id="sz"></td>
             <td id="tp"></td>
             <td id="cr"></td>
+            <td id="tots"></td>
         </tr>
     </table>
         <p class="edittext1">Your order is: <span id="total1"></span></p>
@@ -78,6 +89,7 @@
             <button class="sub2" name="button" type="submit">No</button>
         </div>
         <button class="sub3" name="button" onclick="getGrandTotal();">Checkout</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
