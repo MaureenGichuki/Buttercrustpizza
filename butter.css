@@ -194,6 +194,12 @@ body{
     font-weight: bolder;
     display: none;
 }
+.edittext4{
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    display: none;
+}
 .edittext{
     font-size: 25px;
     color: white;
@@ -220,4 +226,33 @@ body{
 }
 #table{
     display: none;
+    border-collapse: collapse;
+    /* width: 100%; */
+      
+}
+.form2{
+    display: none;
+}
+.sub6{
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    display: block;
+    border-style: hidden;
+    margin-right: 70px;
+    display: none;
+}
+tr{
+    color: white;
+    font-size: 20px;
+}
+td{
+    padding: 20px;
+}
+.loc{
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
 }
