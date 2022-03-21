@@ -188,6 +188,12 @@ body{
     font-weight: bolder;
     display: none;
 }
+.edittext3{
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    display: none;
+}
 .edittext{
     font-size: 25px;
     color: white;
