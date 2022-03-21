@@ -190,6 +190,12 @@ a{
     display: block;
     border-style: hidden;
 }
+.subby{
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    display: none;
+}
 .edittext1{
     font-size: 25px;
     color: white;
