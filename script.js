@@ -1,5 +1,5 @@
 $(document).ready(function(){
-     
+    
     $('.sub').click(function(){
     
             $('.sub4').show();
@@ -9,26 +9,6 @@ $(document).ready(function(){
             $('.sub5').show();
        
     });
-    $('.sub').click(function(){
-        let size= (document.getElementById("size").value);
-        let toppings= (document.getElementById("toppings").value);
-        let crust= (document.getElementById("crust").value);
-        // let total;
-        let tr = '<tr><td>' + size +'</td>   <td>' + toppings + '</td>   <td>' + crust + '</td></tr>';
-        $('tbody').append(tr);
-        total = (sizePrice + topPrice + crustPrice);
-})
-
-        $('.sub4').click(function(){
-        let size= (document.getElementById("size").value);
-        let toppings= (document.getElementById("toppings").value);
-        let crust= (document.getElementById("crust").value);
-        // let total = parseInt(size + toppings + crust);
-        let tr = '<tr><td>' + size +'</td>   <td>' + toppings + '</td>   <td>' + crust + '</td></tr>';
-            $('tbody').append(tr);
-        });
-
-
         $('.sub5').click(function(){
             $('.edittext2').show();
             $('.sub1').show();
@@ -79,6 +59,33 @@ let totals;
 let delivery = 200;
 function getGrandTotal(sizePrice, topPrice, crustPrice){
 let size = (document.getElementById("size").value);
+$('.sub').click(function(){
+    let size= (document.getElementById("size").value);
+    let toppings= (document.getElementById("toppings").value);
+    let crust= (document.getElementById("crust").value);
+    let total = (sizePrice + topPrice + crustPrice);
+    console.log(total);
+    let tr = '<tr><td>' + size +'</td>   <td>' + toppings + '</td>   <td>' + crust + '</td>  <td>' + total + '</td></tr>';
+    $('tbody').append(tr);
+    totals = (total + delivery);
+    document.getElementById("q1").innerHTML = totals;
+});
+
+
+
+$('.sub4').click(function(){
+    let size= (document.getElementById("size").value);
+    let toppings= (document.getElementById("toppings").value);
+    let crust= (document.getElementById("crust").value);
+    let total = (sizePrice + topPrice + crustPrice);
+    console.log(total)
+    let tr = '<tr><td>' + size +'</td>   <td>' + toppings + '</td>   <td>' + crust + '</td>  <td>' + total + '</td></tr>';
+        $('tbody').append(tr);
+        totals = (total + delivery);
+        document.getElementById("q1").innerHTML = totals;
+
+}); 
+
 var sizePrice = 0 ;
 if (size==="large-1000"){
    sizePrice = 1000;
@@ -128,16 +135,12 @@ else if (crust==="brooklyn-400"){
 else if(crust==="gluten-500"){
     crustPrice = 500;
 }
-
-totals = (sizePrice + topPrice + crustPrice + delivery);
-document.getElementById("q1").innerHTML = totals;
-
 }
-
 console.log(getGrandTotal());
 
 $('.sub6').click (function(location){
    var location = $('#em1').val();
 
 document.getElementById("q2").innerHTML = location;
-});
+
+})
