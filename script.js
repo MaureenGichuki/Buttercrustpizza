@@ -37,6 +37,12 @@ $(document).ready(function(){
             $('.sub3').hide();
             $('.sub6').hide();
         });
+        $('.sub2').click(function(){
+            $('.subby').show();
+            $('.sub1').hide();
+            $('.sub3').show();
+            $('.sub2').hide();
+        });
 });
 
 
@@ -67,7 +73,7 @@ $('.sub').click(function(){
     console.log(total);
     let tr = '<tr><td>' + size +'</td>   <td>' + toppings + '</td>   <td>' + crust + '</td>  <td>' + total + '</td></tr>';
     $('tbody').append(tr);
-    totals = (total + delivery);
+    totals = (total+ delivery);
     document.getElementById("q1").innerHTML = totals;
 });
 
