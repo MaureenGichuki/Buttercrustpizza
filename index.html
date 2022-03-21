@@ -11,9 +11,9 @@
     <div class="main">
         <div class="nav">
             <ul>
-                <li>Home</li>
-                <li>Menu</li>
-                <li>Contacts</li>
+                <li><a href="#butter">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contacts">Contacts</a></li>
             </ul>
         </div>
         <p class="bter1">
@@ -21,7 +21,7 @@
             <br>
             Pizza
         </p>
-        <div class="butter">
+        <div id="butter">
             <div class="bter">
                 <p class="bter2">
                     Perfect has seven letters. So does Pizzzza.
@@ -33,6 +33,7 @@
     <p class="m1">Our Menu</p>
     <div id="menu">
         <div class="size1">
+            <P class="p1">Available Sizes</P>
             <img src="https://images.pexels.com/photos/1788852/pexels-photo-1788852.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="img1">
             <select id="size">
                 <option label="Large" name="siz" value="large">Large</option>
@@ -41,6 +42,7 @@
             </select>
         </div>
         <div class="top1">
+            <P class="p1">Available Toppings</P>
             <img src="https://images.pexels.com/photos/842519/pexels-photo-842519.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="img3">
             <select  id="toppings">
                 <option label="Pepperoni" name="top" value="pepperoni">Pepperoni</option>
@@ -52,6 +54,7 @@
             </select>
         </div>
         <div class="crust1">
+            <P class="p1">Available Crust Choices</P>
             <img src="https://images.pexels.com/photos/1166120/pexels-photo-1166120.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="img2">
             <select id="crust">
                 <option label="Pan & Hand Tossed" name= "cru" value="pan&handtossed">Pan & Hand Tossed</option>
@@ -96,7 +99,7 @@
         <button class="sub3" name="button" onclick="getGrandTotal();">Checkout</button>
         <p class="edittext4">Your Grand Total is:<span id="q1"></span></p>
         <p class="edittext6">Your order will be dispatched to:<span id="q2"></span></p>
-        <div class="contacts">
+        <div id="contacts">
                 <ul>
                     <p class="n7">Get In Touch With Us</p>
                     <li>(480)555-0103</li>
